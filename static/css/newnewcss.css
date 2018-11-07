@@ -1,0 +1,6 @@
+
+
+.bottom-edge-shadow {
+	-webkit-box-shadow: 0 -1px 5px 1px #3584AA;
+	        box-shadow: 0 -1px 5px 1px rgba(21, 53, 71, 0.41);
+}

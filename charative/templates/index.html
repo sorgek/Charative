@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h5>Konnichiha!</h5>
+    Hello,
+    {% if request.user.is_authenticated %}
+       {{ request.user.username }}
+    {% else %}
+
+    starshine
+
+    {% endif%}! The world says hello!
+    {% if poop.picture %}
+        <p> Site Owner's face: <img src="{{ poop.picture.url }}"> </p>
+    {% else %}
+        <p> Site Owner: {{ poop.name }}</p>
+    {% endif %}
+<img src="{% static 'images/goat.jpg' %}">
+</body>
+</html>
